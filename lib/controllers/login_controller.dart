@@ -18,7 +18,7 @@ class LoginController extends GetxController {
     Get.dialog(Center(child: CircularProgressIndicator()),
         barrierDismissible: false);
     Request request = Request(url: Url.urlLogin, body: {
-      'email': emailTextController.text,
+      'username': emailTextController.text,
       'password': passwordTextController.text
     });
     request.post().then((value) {

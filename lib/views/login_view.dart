@@ -11,6 +11,7 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: Text(
           'GetX Login',
         ),
@@ -27,7 +28,7 @@ class LoginView extends StatelessWidget {
                 decoration: InputDecoration(
                   fillColor: Colors.grey[200],
                   filled: true,
-                  hintText: 'Email',
+                  hintText: 'Username',
                   hintStyle: GoogleFonts.exo2(
                     fontSize: 16,
                     color: Colors.grey,
@@ -54,7 +55,7 @@ class LoginView extends StatelessWidget {
                   fontWeight: FontWeight.normal,
                 ),
                 validator: (value) =>
-                value.trim().isEmpty ? 'Email required' : null,
+                value.trim().isEmpty ? 'Username required' : null,
               ),
               SizedBox(height: 16),
               TextFormField(

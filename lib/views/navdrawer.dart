@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'login_view.dart';
-
 class NavDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -74,8 +72,7 @@ class NavDrawer extends StatelessWidget {
                 width: 320.0,
                 child: RaisedButton(
                   onPressed: () {
-//                    Navigator.of(context).pop();
-                    Get.to(LoginView());
+                    Navigator.of(context).pushNamed('/loginView');
                   },
                   child: Text(
                     "yes",
