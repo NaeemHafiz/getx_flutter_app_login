@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_flutter_app_login/controllers/login_controller.dart';
+import 'package:getx_flutter_app_login/views/navdrawer.dart';
 import 'file:///F:/Projects/Mobile/Flutter/getx_flutter_app_login/lib/controllers/home_controller.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -12,6 +13,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     print(_loginController.emailTextController.text);
     return Scaffold(
+      drawer: NavDrawer(),
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
